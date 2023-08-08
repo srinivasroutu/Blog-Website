@@ -1,0 +1,110 @@
+/* Reset some default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body style */
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Navbar style */
+  .navbar {
+    padding-top: 5px; /* Reduce padding */
+    padding-bottom: 5px; /* Reduce padding */
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: #1abc9c; /* Turquoise */
+  }
+  
+  .navbar-nav li a:hover {
+    color: #17d6b0 !important; /* Bright Turquoise */
+  }
+  
+  /* Container style */
+  .container {
+    flex: 1;
+    padding-top: 40px; /* Adjust padding */
+    padding-bottom: 40px; /* Adjust padding */
+  }
+  
+  /* Post preview style */
+  .post-preview {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light Gray */
+  }
+  
+  /* Post header style */
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .post-header h2 {
+    font-size: 24px;
+  }
+  
+  /* Delete button style */
+  .delete-form {
+    display: inline;
+    margin: 0;
+  }
+  
+  .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #999; /* Gray */
+    transition: color 0.3s;
+  }
+  
+  .delete-button:hover {
+    color: #ff4c4c; /* Red */
+  }
+  
+
+.publish-btn {
+    background-color: #27ae60; /* Green */
+    color: #fff; /* White */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .publish-btn:hover {
+    background-color: #219453; /* Darker Green */
+  }
+  
+  /* Footer style */
+  .footer {
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 10px;
+    background-color: #1abc9c; /* Turquoise */
+    color: #fff; /* White */
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .post-header h2 {
+      font-size: 20px;
+    }
+  }
+  
